@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    font-family: Platypi;
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #284B63;
+  }
+  .nav-links{
+    float: left;
+    list-style: none;
+    display: flex;
+  }
+  .nav-links li{
+    margin-left: 20px;
+  }
+  .nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6em;
+    transition: color 0.5s ease;
+  }
+  .nav-item{
+    padding: 12px;
+    transition: color 1s ease, background-color 1s ease;
+  }
+  .nav-item:hover{
+    background-color: #c8cacc;
+    border-radius: 8px;
+    color: #111;
+    
+  }
+  #showName {
+    opacity: 0;
+    font-size: 2px;
+    transition: opacity 0.7s ease-in-out, font-size 0.5s ease-in-out;
+  }
+  .nav-item:hover #showName {
+    font-size: 1em;
+    display: contents;
+    opacity: 1;
+    cursor: pointer;
+  }   
+  .brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+  }
+.content{
+    border-radius: 15px;
+    display: flow-root;
+    align-content: center;
+    font-size: 20px;
+    width: 60%;    
+    height: 63%;
+    background-color: rgba(135, 135, 135, 0.8); 
+}
+.content form input{
+    width: 50%;
+    height: 5%;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+.content form label {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.content form .btn{
+    width: 15%;
+    height: 7%;
+    border-radius: 10px;
+    background-color: #284B63;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.content form .btn:hover{
+    border: solid 1px white;
+}
+.container{
+    width: 100%;
+    height: 94%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.about{
+    width: 30%;
+    height: 60%;
+    display: flow-root;
+    align-content: center;
+}
+.about p, h1{
+    text-align: center;
+}
+.half{
+    display: inline-block;
+    width: 40%;
+}
+
+#back{
+    color: blue;
+    text-decoration: none;
+}
+#back:hover{
+    color: black;
+    text-decoration: overline;
+}
+.alert{
+    padding: 10px;
+    border: solid 2px black;
+}

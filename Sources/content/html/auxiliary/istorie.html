@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/istorie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Istorie</title>
+</head>
+<body>
+    <button onclick="topFunction()" class="btn" id="btn" style='font-size:24px'><i class='fas fa-arrow-alt-circle-up' style='font-size:70px;color:red'></i></button>
+    <script>
+     var mybutton = document.getElementById("btn");
+ 
+     // When the user scrolls down 20px from the top of the document, show the button
+     window.onscroll = function() {scrollFunction()};
+ 
+     function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             mybutton.style.display = "block";
+         } else {
+             mybutton.style.display = "none";
+         }
+     }
+ 
+     // When the user clicks on the button, scroll to the top of the document
+     function topFunction() {
+         document.body.scrollTop = 0; // For Safari
+             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+     }
+    </script>
+    <div class="nav">
+        <a href="">Bibliografie</a>
+        <a href="" >Contact</a>
+        <a href="evaluare.html">Evaluare</a>
+        <a href="istorie.html" style="color: yellowgreen;">Istorie</a>
+        <a href="index.html">Home</a>
+   </div>
+   <br>
+   <br>
+   <div class="navigation">
+        <h2>Sectiuni</h2>
+        <a href="">Shortcut1</a>
+        <br>
+        <a href="">Shortcut2</a>
+   </div>
+   <div class="basic">
+    <iframe class="frame" src="istorie1.html"></iframe>
+    </div>
+   <div class="footer">
+    <h2>Istorie</h2>
+    <h2>Concursul "Istorie si societate in dimensiune virtuala" 2025</h2>
+    <div class="link">
+        <h3>Link-uri utile:</h3>
+        <ul>
+            <li>Chapter 1</li>
+            <li>Chapter 2</li>
+            <li>Chapter 3</li>
+        </ul>
+    </div>
+    <div class="info">
+        <p>Creator: <b>Hulpan Constantin - Alexandru</b></p>
+        <p>Prof. coordonator:</p>
+        <p>Liceul Teoretic "Emil Racovita" Vaslui</p>
+        <p>Proiect realizat folosind: HTML 5, CSS 3 si JavaScript.</p>
+    </div>
+    </div>  
+
+</body>
+</html>

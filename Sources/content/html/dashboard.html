@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd77b90805.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="brand">Historical.ly</a>
+        <ul class="nav-links">
+            <li>
+                <a href="/" class="nav-item" ><i class="fa-solid fa-house"></i> <label id="showName"> Home</label></a>
+            </li>
+            <li>
+                <a href="istorie.html" class="nav-item"><i class="fa-solid fa-book"></i> <label id="showName"> Istorie</label></a>
+            </li>
+            <li>
+                <a href="evaluare.html" class="nav-item"><i class="fa-solid fa-pen-nib"></i> <label id="showName"> Evaluare</label></a>
+            </li>
+            <li>
+                <a href="galerie.html" class="nav-item"><i class="fa-solid fa-photo-film"></i> <label id="showName"> Galerie</label></a>
+            </li>
+            <li>
+                <a href="bibliografie.html" class="nav-item"><i class="fa-regular fa-file-lines"></i> <label id="showName"> Bibliografie</label></a>
+            </li>
+            <li>
+                <a href="login.html" class="nav-item" style="background-color: rgb(126, 123, 123); color: #111; border-radius: 8px;"><i class="fa-solid fa-user"></i> Contul tau</a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-item"><i class="fa-solid fa-message"></i><label id="showName"> Contact</label></a>
+            </li>
+        </ul>
+   </nav>
+   <div class="dashboard-container">
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="/logout">Deconectare</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="info1">
+                <h1 id="name">Bun venit, </h1>
+                <h2>Informatiile tale:</h2>
+                <p id="userName">Username: </p>
+                <p id="userEmail">Email: </p>
+                <button class="btn" onclick="window.location.href='edit.html'">Editeaza Informatiile</button>
+            </div>
+            <div class="main-content1">
+                <div class="info1">
+                    <h2>Activitati recente:</h2>
+                    <p>Activitate 1</p>
+                    <p>Activitate 2</p>
+                    <p>Activitate 3</p>
+                    <p>Activitate 4</p>
+                    <p>Activitate 5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            try {
+                const response = await fetch("/get_user");
+                const data = await response.json();
+                
+                if (data.error) {
+                    console.error("Eroare:", data.error);
+                    return;
+                }
+    
+                console.log("Date utilizator:", data); // DEBUG: Vezi datele în consolă
+                document.getElementById("name").innerText = "Bun venit, " + data.name;
+                document.getElementById("userName").innerText = data.username || "N/A";
+                document.getElementById("userEmail").innerText = data.email || "N/A";
+            } catch (error) {
+                console.error("Eroare la preluarea datelor:", error);
+            }
+        });
+
+        function editUser() {
+        const currentEmail = document.getElementById("userEmail").innerText;
+        document.getElementById("newEmail").value = currentEmail;
+        document.getElementById("editForm").style.display = "block"; // Arată formularul de editare
+    }
+
+        // Funcția care salvează noile date
+        async function saveUserData() {
+            const newEmail = document.getElementById("newEmail").value;
+            try {
+                const response = await fetch("/update_user", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email: newEmail })
+                });
+                const data = await response.json();
+                if (data.success) {
+                    alert("Email actualizat!");
+                    getUserData(); // Reîncărcăm datele actualizate
+                    document.getElementById("editForm").style.display = "none"; // Ascundem formularul
+                } else {
+                    alert("Eroare la actualizare!");
+                }
+            } catch (error) {
+                console.error("Eroare la actualizare:", error);
+            }
+        }
+
+        // Funcția pentru a anula editarea
+        function cancelEdit() {
+            document.getElementById("editForm").style.display = "none"; // Ascundem formularul
+        }
+
+        // Încarcă datele utilizatorului la încărcarea paginii
+        getUserData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    font-family: Platypi;
+    background-color: #D9D9D9;
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #284B63;
+  }
+  .nav-links{
+    float: left;
+    list-style: none;
+    display: flex;
+  }
+  .nav-links li{
+    margin-left: 20px;
+  }
+  .nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6em;
+    transition: color 0.5s ease;
+  }
+  .nav-item{
+    padding: 12px;
+    transition: color 1s ease, background-color 1s ease;
+  }
+  .nav-item:hover{
+    background-color: #c8cacc;
+    border-radius: 8px;
+    color: #111;
+    
+  }
+  #showName {
+    opacity: 0;
+    font-size: 2px;
+    transition: opacity 0.7s ease-in-out, font-size 0.5s ease-in-out;
+  }
+  .nav-item:hover #showName {
+    font-size: 1em;
+    display: contents;
+    opacity: 1;
+    cursor: pointer;
+  }   
+  .brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+  }
+
+.btn{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    background-color: transparent;
+}
+.sidebar{
+    overflow: hidden;
+    height: 94.6%;
+    width: 0;
+    float: left;
+    background-color: #353535;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    h2{
+        text-align: center;
+        color: white;
+    }
+}
+.closebtn{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    width: 17%;
+    height: 5.5%;
+    border: none;
+    border-radius: 9px;
+    margin-left: 70%;
+    margin-top: 5px;
+    visibility: visible;
+}
+.openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    width: 100%;
+    height: 6%;
+    border: none;
+    border-radius: 9px;
+    visibility: visible;
+}
+.sidebar iframe{
+    border: none;
+    height: 95%;
+    width: 96%;
+}
+.openbtn:hover{
+    background-color: #444;
+}
+#main{
+    display: inline-block;
+    background-color: #353535;
+    width: 2.5%;
+    height: 94.6%;
+    display: inline-block;
+    overflow: hidden;
+}
+.frame{
+    display: inline;
+    float: right;
+    border: none;
+    background-color: #D9D9D9;
+    width: 97.5%;
+    height: 94.6%;
+    transition: 0.3s;
+}
+.frame::-webkit-scrollbar{
+    display: none;
+}
+.footer {
+    display: flex;
+    background-color: #284b63;
+    color: white;
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+.footer-section h2, .footer-section h3 {
+    margin-bottom: 15px;
+}
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.contact-form .text-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact-form .btn {
+    background-color: #3C6E71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form .btn:hover {
+    background-color: #284b63;
+}
+.footer-bottom {
+    background-color: #23303e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer h2{
+    margin: 10px;
+}
+.footer .link{
+    margin: 10px;
+}
+
+.link, .info{ 
+    display: inline-block;
+}
+.link ul{
+    list-style: none;
+}
+.info{
+    margin-left: 30%;
+}
+.title{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+.title h1{
+    font-size: 50px;
+}
+.cat1{
+    margin: 10px;
+    border-bottom: solid 1px;
+    font-size: 20px;
+    width: 100%;
+}
+.cat1 .content{
+    width: 100%;
+    display: none;
+}
+.photo1{
+    width: 96%;
+}
+.photo1 img{
+    width: 15%;
+    height: 20%;
+}
+.cat1 .showC{
+    width: 220px;
+    border-radius: 10px;
+    border: solid 2px #3c6e71;
+    padding: 3px;
+    transition: ease-in-out 0.3s;
+}
+.cat1 .showC:hover{
+    cursor: pointer;
+    background: #3c6e71;
+    color: white;
+    padding: 5px;
+}
+.photo1, .desc{
+    margin: 25px;
+}
+.photo1 img{
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+.photo1 img:hover{
+    cursor: pointer;
+}   
+.myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.zoomin{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.zoomin:hover, .zoomout:hover{
+    color: #b2b2b2;
+}
+.zoomout{
+    position: absolute;
+    top: 30px;
+    left: 52.5%;
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd77b90805.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="brand">Historical.ly</a>
+        <ul class="nav-links">
+            <li>
+                <a href="../../../index.html" class="nav-item" ><i class="fa-solid fa-house"></i> <label id="showName"> Home</label></a>
+            </li>
+            <li>
+                <a href="istorie.html" class="nav-item"><i class="fa-solid fa-book"></i> <label id="showName"> Istorie</label></a>
+            </li>
+            <li>
+                <a href="evaluare.html" class="nav-item"><i class="fa-solid fa-pen-nib"></i> <label id="showName"> Evaluare</label></a>
+            </li>
+            <li>
+                <a href="galerie.html" class="nav-item"><i class="fa-solid fa-photo-film"></i> <label id="showName"> Galerie</label></a>
+            </li>
+            <li>
+                <a href="bibliografie.html" class="nav-item"><i class="fa-regular fa-file-lines"></i> <label id="showName"> Bibliografie</label></a>
+            </li>
+            <li>
+                <a href="login.html" class="nav-item" style="background-color: rgb(126, 123, 123); color: #111; border-radius: 8px;"><i class="fa-solid fa-user"></i> Contul tau</a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-item"><i class="fa-solid fa-message"></i><label id="showName"> Contact</label></a>
+            </li>
+        </ul>
+   </nav>
+   <br><br><br>
+   <div class="container">
+        <div class="about">
+            <h1>Conecteaza-te pentru a-ti salva progresul invatand istorie!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis doloremque fugit provident consequatur fuga earum, similique ea repellendus ad sapiente accusamus atque vero dolore quis reprehenderit consectetur, nostrum sunt.</p>
+        </div>
+        <div class="content">
+            <center>
+                <form action="/sign_up" method="post">
+                    <h1 style="font-size: 50px;">Creare </h1>
+                    <h2><i class="fa-solid fa-user"></i></h2>
+                    <center>
+                        <div class="half">
+                            <label>Username</label><br>
+                            <input type="text" placeholder="Username" id="user" name="name"><br>
+                            <label>Parola</label><br>
+                            <input type="password" placeholder="Parola" name="password"><br>
+                            <label>Reintrodu parola</label><br>
+                            <input type="password" placeholder="Reintrodu Parola" name="r-password"><br><br>
+                        </div>
+                        <div class="half">
+                            <label>Numele de afisat</label>
+                            <input type="text" placeholder="Numele de afisat" id="name_full"><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Email" id="email" name="email"><br><br>
+                            <label id="alert"></label>
+                        </div>
+                    </center>
+                    <input type="submit" value="Creare cont" class="btn"><br>
+                    <a href="login.html" id="back">Ai deja cont?</a>
+                </form>
+        </center>
+        </div>
+    </div>
+</body>
+</html>

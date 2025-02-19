@@ -1,0 +1,264 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/istorie - Test.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fd77b90805.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Istoria arcului si a sagetii</title>
+  </head>
+  <body>
+    <button
+      onclick="topFunction()"
+      class="btn"
+      id="btn"
+      style="font-size: 24px"
+    >
+      <i
+        class="fas fa-arrow-alt-circle-up"
+        style="font-size: 70px; color: red"
+      ></i>
+    </button>
+
+    <nav class="navbar">
+      <a href="/index.html" class="brand">Historical.ly</a>
+      <ul class="nav-links">
+        <li>
+          <a href="/" class="nav-item"
+            ><i class="fa-solid fa-house"></i>
+            <label id="showName"> Home</label></a
+          >
+        </li>
+        <li>
+          <a
+            href="istorie.html"
+            class="nav-item"
+            style="background-color: #c8cacc; color: #111; border-radius: 8px"
+            ><i class="fa-solid fa-book"></i> Istorie</a
+          >
+        </li>
+        <li>
+          <a href="evaluare.html" class="nav-item"
+            ><i class="fa-solid fa-pen-nib"></i>
+            <label id="showName"> Evaluare</label></a
+          >
+        </li>
+        <li>
+          <a href="galerie.html" class="nav-item"
+            ><i class="fa-solid fa-photo-film"></i>
+            <label id="showName"> Galerie</label></a
+          >
+        </li>
+
+        <li>
+          <a href="bibliografie.html" class="nav-item"
+            ><i class="fa-regular fa-file-lines"></i>
+            <label id="showName"> Bibliografie</label></a
+          >
+        </li>
+        <li>
+          <a href="login.html" class="nav-item"
+            ><i class="fa-solid fa-user"></i
+            ><label id="showName"> Contul tau</label></a
+          >
+        </li>
+        <li>
+          <a href="contact.html" class="nav-item"
+            ><i class="fa-solid fa-message"></i
+            ><label id="showName"> Contact</label></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar" id="sidebar">
+      <button class="closebtn" onclick="closeNav()">&#9776;</button>
+      <div class="sdb" id="sdb">
+        <center>
+          <div>
+            <h2 style="font-size: 30px">Navigare rapida</h2>
+          </div>
+        </center>
+        <p
+          class="frame-nav"
+          style="
+            margin: 10px;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+          "
+        >
+          Istoria arcului
+        </p>
+        <ul class="frame-nav">
+          <li>
+            <a
+              href="istorie1.html#img-modal"
+              id="shortcut1"
+              target="frame"
+              class="open-modal"
+              ><i class="fa-solid fa-paperclip"></i> Prezentare</a
+            >
+          </li>
+          <li>
+            <label class="clasificare"
+              ><i class="fa-solid fa-circle-chevron-down"></i>
+              Clasificare</label
+            >
+            <ul id="secondary">
+              <li>
+                <a href="istorie1.html#arb" target="frame"
+                   id="arb"><i class="fa-solid fa-paperclip"></i> Arbaleta</a
+                >
+              </li>
+              <li>
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> Arcul getic</a
+                >
+              </li>
+              <li>
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> Arcul long</a
+                >
+              </li>
+              <li>
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> Arcul reflex</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="istorie1.html" target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Arcul in mitologie</a
+            >
+          </li>
+        </ul>
+        <p
+          class="frame-nav"
+          style="
+            margin: 10px;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+          "
+        >
+          Sageata
+        </p>
+        <ul class="frame-nav">
+          <li>
+            <a href="istorie1.html" target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Shortcut</a
+            >
+          </li>
+          <li>
+            <a href="istorie1.html" target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Shortcut</a
+            >
+          </li>
+          <li>
+            <a href="istorie1.html" target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Shortcut</a
+            >
+          </li>
+        </ul>
+        <a href="istorie1.html" target="frame" class="frame-nav"
+          ><i class="fa-solid fa-paperclip"></i> Arcasul</a
+        >
+        <a href="istorie1.html" target="frame" class="frame-nav"
+          ><i class="fa-solid fa-paperclip"></i> Batalii</a
+        >
+        <a href="istorie1.html" target="frame" class="frame-nav"
+          ><i class="fa-solid fa-paperclip"></i> Concluzii</a
+        >
+      </div>
+    </div>
+    <div id="main">
+      <center>
+        <button id="bt1" class="openbtn" onclick="openNav()">&#9776;</button>
+      </center>
+    </div>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/types.js"></script>
+    <iframe class="frame" src="istorie1.html" id="frame" name="frame" style="overflow: auto;" scrolling="yes"></iframe>
+    <br />
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about" style="border-right: solid 2px white">
+          <h2>Historical.ly</h2>
+          <p>All rights reserved. 2025</p>
+          <p>Creator: <b>Hulpan Constantin - Alexandru</b></p>
+          <p>Made with: HTML, CSS, Javascript, NodeJS, Mongo.</p>
+        </div>
+        <div class="footer-section links" style="border-right: solid 2px white">
+          <h3>Link-uri utile:</h3>
+          <ul>
+            <li><a href="#">Chapter 1</a></li>
+            <li><a href="#">Chapter 2</a></li>
+            <li><a href="#">Chapter 3</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h3>Contact</h3>
+          <form action="contact.html" method="post">
+            <input
+              type="email"
+              name="email"
+              class="text-input contact-input"
+              placeholder="Your email address..."
+            />
+            <textarea
+              name="message"
+              class="text-input contact-input"
+              placeholder="Your message..."
+            ></textarea>
+            <button type="submit" class="btn btn-big">
+              <i class="fa fa-envelope"></i>Send
+            </button>
+          </form>
+        </div>
+        <div class="footer-section audio" style="border-left: 2px solid white;">
+            <audio controls>
+                <source src="../../Media/audio/audio.mp3" type="audio/mpeg">
+              </audio>
+              <br>
+              <br>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; historical.ly | Designed by Hulpan Constantin - Alexandru
+      </div>
+    </div>
+    <script>
+      var iframe = document.querySelector("iframe");
+
+iframe.contentWindow.addEventListener("scroll", function () {
+    var iframeDoc = iframe.contentWindow.document;
+    var winScroll = iframe.contentWindow.scrollY;
+    var height = iframeDoc.documentElement.scrollHeight - iframeDoc.documentElement.clientHeight;
+
+    if (height === 0) return; // Asigură-te că scrollHeight este mai mare decât clientHeight
+
+    var scrolled = (winScroll / height) * 100;
+
+    // Verifică dacă scrolled a depășit 100
+    if (scrolled === Infinity || isNaN(scrolled)) {
+        console.log("Eroare: calculul scroll-ului a dus la o valoare incorectă");
+        return;
+    }
+
+    console.log("Scrollul este la: " + scrolled + "%");
+    iframe.contentWindow.postMessage({ progress: scrolled }, "*");
+});
+
+
+    </script>
+  </body>
+</html>

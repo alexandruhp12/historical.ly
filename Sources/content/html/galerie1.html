@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd77b90805.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/galerie.css">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    p, h2{
+        margin: 10px;
+    }
+</style>
+<body>
+    <button onclick="topFunction()" class="btn" id="btn" style='font-size:24px'><i class='fas fa-arrow-alt-circle-up' style='font-size:70px;color:red'></i></button>
+   <script>
+    var mybutton = document.getElementById("btn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+    }
+   </script>
+   <div class="title">
+        <h1>Galerie</h1>
+   </div>
+   <div class="cat1">
+    <h2 class="showC">Categoria 1 <i class='fa-solid fa-eye'></i></h2>
+        <div class="content">
+            <p class="desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur provident alias autem blanditiis fuga architecto, soluta, repellat repellendus dolorum molestiae quam? Laboriosam exercitationem assumenda totam voluptatum omnis ducimus aspernatur?
+            </p>
+            <div class="photo1">
+                <img src="../../Media/img/img.jpg" alt="" id="img_modal">
+                <img src="../../Media/img/img.jpg" alt="" id="img_modal">
+            </div>
+            <div class="video1"></div>
+        </div>
+        
+   </div>
+   <script> 
+    document.querySelectorAll('.showC').forEach(function(showC) {
+        showC.addEventListener('click', function() {
+            var content = this.nextElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                showC.innerHTML = "Categoria 1 <i class='fa-solid fa-eye-slash'></i>";
+                showC.style.color = "white";
+                showC.style.backgroundColor = "#3c6e71";
+            } else {
+                content.style.display = "none";
+                showC.innerHTML = "Categoria 1 <i class='fa-solid fa-eye'></i>";
+                showC.style.color = "black";
+                showC.style.backgroundColor = "#D9D9D9";
+            }
+        });
+    });
+   </script>
+   <div id="myModal" class="myModal">
+        <button class="zoomin" onclick="zoomIn()">+</button>
+        <button class="zoomout" onclick="zoomOut()">-</button>
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+   <script>
+    var modal = document.getElementById("myModal");
+    var imgs = document.querySelectorAll('[id="img_modal"]');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    var arrow = document.getElementById("btn")
+    imgs.forEach(function(img) {
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            arrow.style.display = "none";
+        }
+    });
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+            modal.style.display = "none";
+            arrow.style.display = "block";
+            modalImg.style.width = "auto";
+        }
+    function zoomIn() {
+        var currentWidth = modalImg.clientWidth;
+        if(currentWidth < 1300){
+            modalImg.style.width = (currentWidth + 200) + "px";
+        }
+    }
+    function zoomOut() {
+        var currentWidth = modalImg.clientWidth;
+        if(currentWidth > 100) {
+                modalImg.style.width = (currentWidth - 100) + "px";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: Platypi;
+}
+.nav{
+    background-color: #284B63;
+    opacity: 1;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+.brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    margin: 10px;
+    float: right;
+}
+.nav a:hover{
+    color: yellowgreen;
+}
+.curent{
+    color: yellowgreen;
+}
+.navigation {
+    display: block;
+    float: inline-start;
+    overflow: hidden;
+    margin-top: 0.3%;
+    height: 94.7%;
+    background-color: #353535;
+    width: 15%;
+}
+.navigation h2{
+    color: white;
+    text-align: center;
+}
+.navigation a{
+    display: list-item;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.navigation a:hover{
+    color: yellowgreen;
+}
+.btn{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    background-color: transparent;
+}
+.frame{
+    display: block;
+    background-color: #D9D9D9;
+    width: 80%;
+    overflow: hidden;
+    height: 94.7%;
+    border: none;
+    width: 100%;
+}
+.frame, .navigation{
+    display: inline;
+}
+.basic{
+    display: inline-block;
+    width: 85%;
+    margin-top: 0.3%;
+    background-color: aqua;
+}
+.footer{
+    background-color: #284b63;
+    height: 30%;
+    color: white;
+    overflow: hidden;
+}
+.footer h2{
+    margin: 10px;
+}
+.footer .link{
+    margin: 10px;
+}
+.link, .info{ 
+    display: inline-block;
+}
+.info{
+    margin-left: 30%;
+}

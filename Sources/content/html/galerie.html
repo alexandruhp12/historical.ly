@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd77b90805.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/galerie.css">
+    <title>Galerie</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="brand">Historical.ly</a>
+        <ul class="nav-links">
+            <li>
+                <a href="/" class="nav-item"><i class="fa-solid fa-house"></i> <label id="showName"> Home</label></a>
+            </li>
+            <li>
+                <a href="istorie.html" class="nav-item"><i class="fa-solid fa-book"></i> <label id="showName"> Istorie</label></a>
+            </li>
+            <li>
+                <a href="evaluare.html" class="nav-item"><i class="fa-solid fa-pen-nib"></i> <label id="showName"> Evaluare</label></a>
+            </li>
+            <li>
+                <a href="galerie.html" class="nav-item" style="background-color: #c8cacc; color: #111; border-radius: 8px;"><i class="fa-solid fa-photo-film"></i> Galerie</a>
+            </li>
+            <li>
+                <a href="bibliografie.html" class="nav-item"><i class="fa-regular fa-file-lines"></i> <label id="showName"> Bibliografie</label></a>
+            </li>
+            <li>
+                <a href="login.html" class="nav-item"><i class="fa-solid fa-user"></i><label id="showName">Contul tau</label></a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-item"><i class="fa-solid fa-message"></i><label id="showName"> Contact</label></a>
+            </li>
+        </ul>
+   </nav>
+   <div class="sidebar" id="sidebar">
+        <button class="closebtn" onclick="closeNav()">&#9776;</button>
+        <iframe src="auxiliary/galerie_frame.html" id="sdb"></iframe>
+    </div>
+    <div id="main">
+    <center>
+        <button id="bt1" class="openbtn" onclick="openNav()">&#9776;</button>
+    </center>
+    </div>
+    <script>
+        function openNav(){
+            document.getElementById("sidebar").style.transition = "0.5s";
+            document.getElementById("sidebar").style.width = "15%";
+            document.getElementById("main").style.display = "none";
+            document.getElementById("frame").style.width = "85%";
+            document.getElementById("footer").style.float = "left";
+            document.getElementById("footer").style.width = "100%";
+        }
+
+        function closeNav(){
+            document.getElementById("sidebar").style.transition = "none";
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("main").style.display = "inline-block";
+            document.getElementById("frame").style.width = "97.5%"
+            document.getElementById("frame").style.float = "right";
+            document.getElementById("frame").style.transition = "0.5s";
+        }
+    </script>
+    <iframe class="frame" src="galerie1.html" id="frame" name="frame"></iframe>
+    <br>
+    <div class="footer">
+        <div class="footer-content">
+        <div class="footer-section about" style="border-right: solid 2px white;">
+            <h2>Historical.ly</h2>
+            <p>All rights reserved. 2025</p>
+            <p>Creator: <b>Hulpan Constantin - Alexandru</b></p>
+            <p>Made with: HTML, CSS, Javascript, NodeJS, Mongo.</p>
+        </div>
+        <div class="footer-section links" style="border-right: solid 2px white;">
+            <h3>Link-uri utile:</h3>
+            <ul>
+                <li><a href="#">Chapter 1</a></li>
+                <li><a href="#">Chapter 2</a></li>
+                <li><a href="#">Chapter 3</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-form">
+            <h3>Contact</h3>
+            <form action="contact.html" method="post">
+                <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                <button type="submit" class="btn btn-big">
+                    <i class="fa fa-envelope"></i>
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+        <div class="footer-bottom">
+        &copy; historical.ly | Designed by Hulpan Constantin - Alexandru
+        </div>
+    </div>
+</body>
+</html>
