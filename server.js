@@ -6,13 +6,14 @@ const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 
 const app = express();
-
+const mongoURI = process.env.MONGO_URI;
 // **Conectare la MongoDB**
-mongoose.connect("mongodb://0.0.0.0:27017/mydb", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log("Conectat la MongoDB"))
-  .catch(err => console.error("Eroare la conectarea la MongoDB:", err));
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.log('MongoDB connection error:', err));
 
 // **Configurare stocare sesiune în MongoDB**
 const store = new MongoDBStore({
@@ -23,10 +24,10 @@ const store = new MongoDBStore({
 const MongoStore = require("connect-mongo");
 
 app.use(session({
-    secret: "securitate-maxima",  // Schimbă cu ceva mai sigur în producție
+    secret: process.env.SESSION_SECRET,  // Schimbă cu ceva mai sigur în producție
     resave: false,
     saveUninitialized: false,
-    store: MongoStore.create({ mongoUrl: 'mongodb://0.0.0.0:27017/mydb' }),
+    store: MongoStore.create({ mongoUrl: mongoURI}),
     cookie: { maxAge: 1000 * 60 * 60 } // Sesiunea expiră după 1 oră
 }));
 
