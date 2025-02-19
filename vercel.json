@@ -6,10 +6,8 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
-    }
-  ]
+  "env": {
+    "MONGO_URI": "mongodb+srv://alexandruconstantinhulpan:alexandruconstantinhulpan@alexandru.c4mgmud.mongodb.net/?retryWrites=true&w=majority&appName=Alexandru",
+    "SESSION_SECRET": "3bc858846dea46bf8c5586c1495cb404"
+  }
 }
