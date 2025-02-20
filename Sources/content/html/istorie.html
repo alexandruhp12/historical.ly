@@ -100,10 +100,8 @@
         <ul class="frame-nav">
           <li>
             <a
-              href="istorie1.html#img-modal"
-              id="shortcut1"
+              href="istorie1.html#top"
               target="frame"
-              class="open-modal"
               ><i class="fa-solid fa-paperclip"></i> Prezentare</a
             >
           </li>
@@ -136,7 +134,7 @@
             </ul>
           </li>
           <li>
-            <a href="istorie1.html" target="frame"
+            <a href="istorie1.html#mitologie" target="frame"
               ><i class="fa-solid fa-paperclip"></i> Arcul in mitologie</a
             >
           </li>
@@ -154,13 +152,13 @@
         </p>
         <ul class="frame-nav">
           <li>
-            <a href="istorie1.html" target="frame"
-              ><i class="fa-solid fa-paperclip"></i> Shortcut</a
+            <a href="istorie1.html#arrow" target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Prezentare</a
             >
           </li>
           <li>
             <a href="istorie1.html" target="frame"
-              ><i class="fa-solid fa-paperclip"></i> Shortcut</a
+              ><i class="fa-solid fa-paperclip"></i> Sageata in mitologie</a
             >
           </li>
           <li>
@@ -239,26 +237,23 @@
     <script>
       var iframe = document.querySelector("iframe");
 
-iframe.contentWindow.addEventListener("scroll", function () {
-    var iframeDoc = iframe.contentWindow.document;
-    var winScroll = iframe.contentWindow.scrollY;
-    var height = iframeDoc.documentElement.scrollHeight - iframeDoc.documentElement.clientHeight;
+      iframe.contentWindow.addEventListener("scroll", function () {
+      var iframeDoc = iframe.contentWindow.document;
+      var winScroll = iframe.contentWindow.scrollY;
+      var height = iframeDoc.documentElement.scrollHeight - iframeDoc.documentElement.clientHeight;
 
-    if (height === 0) return; // Asigură-te că scrollHeight este mai mare decât clientHeight
+      if (height === 0) return; 
 
-    var scrolled = (winScroll / height) * 100;
+      var scrolled = (winScroll / height) * 100;
 
-    // Verifică dacă scrolled a depășit 100
-    if (scrolled === Infinity || isNaN(scrolled)) {
-        console.log("Eroare: calculul scroll-ului a dus la o valoare incorectă");
-        return;
-    }
+      if (scrolled === Infinity || isNaN(scrolled)) {
+          console.log("Eroare: calculul scroll-ului a dus la o valoare incorectă");
+          return;
+      }
 
-    console.log("Scrollul este la: " + scrolled + "%");
-    iframe.contentWindow.postMessage({ progress: scrolled }, "*");
-});
-
-
+      console.log("Scrollul este la: " + scrolled + "%");
+      iframe.contentWindow.postMessage({ progress: scrolled }, "*");
+  });
     </script>
   </body>
 </html>
