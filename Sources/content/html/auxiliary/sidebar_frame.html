@@ -20,16 +20,17 @@
 	p{
 		margin: 10px;
 	    color: white;
-	    font-size: 1.2em;
+	    font-size: 1.4em;
 	    font-weight: bold;
 	}
 	li{
+
 		list-style: none;
 	}
-	a{
+	a, label{
 	    padding: 8px 8px 8px 15px;
 	    text-decoration: none;
-	    font-size: 1.2em;
+	    font-size: 1.4em;
 	    color: #f1f1f1;
 	    display: block;
 	    transition: 0.3s;
@@ -43,36 +44,166 @@
 	    border-radius: 8px;
 	    text-decoration: none;
 }
-	::-webkit-scrollbar{
+
+	.clasificare{
+		padding: 8px;
+		text-decoration: none;
+		font-size: 1.4em;
+		color: #f1f1f1;
+		display: block;
+		transition: 0.3s;
+	}
+	.clasificare:hover{
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #4f8dff;
+		background-color: #D9D9D9;
+		margin: 0px 15px 15px 15px;
+		border-radius: 8px;
+		text-decoration: none;
+	}
+	#secondary{
+		margin-left: 25px;
 		display: none;
 	}
+::-webkit-scrollbar {
+  width: 10px;
+  margin-left: 10px;
+}
+::-webkit-scrollbar-thumb{
+	background: #888; 
+}
+::-webkit-scrollbar-track{
+	background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb:hover{
+	background: #555; 
+}
+a{
+	overflow: auto;
+}
 </style>
 <body>
-	<center>
-        <div>
-            <h2>Navigare rapida</h2>
+	<div class="sdb" id="sdb">
+        <center>
+          <div>
+            <h2 style="font-size: 30px">Navigare rapida</h2>
+          </div>
+        </center>
+        <p
+          class="frame-nav"
+          style="
+            margin: 10px;
+			margin-left: 20px;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+          "
+        >
+            Istoria arcului
+        </p>
+        <div class="frame-nav">
+            <a
+              href="istorie1.html#top"
+              target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Prezentare</a
+            >
+            <label class="clasificare"
+              ><i class="fa-solid fa-circle-chevron-down"></i>
+              Clasificare</label
+            >
+            <div id="secondary">
+				<label><b>Arcul simplu</b></label>
+              
+                <a href="istorie1.html#arb" target="frame"
+                   id="arb"><i class="fa-solid fa-paperclip"></i> Arcul simplu (primitiv)</a
+                >
+             
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> Arcul lung englezesc (longbow)</a
+                >
+				<label><b>Arcul compozit</b></label>
+             
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> Arcul asirian</a
+                >
+             
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> Arcul scitic</a
+                >
+
+				<a href="istorie1.html" target="frame"
+				  ><i class="fa-solid fa-paperclip"></i> Arcul maghiar</a
+				>
+
+				<a href="istorie1.html" target="frame"
+				  ><i class="fa-solid fa-paperclip"></i> Arcul mongol</a
+				>
+
+				<a href="istorie1.html" target="frame"
+				  ><i class="fa-solid fa-paperclip"></i> Arcul japonez lung (yumi)</a
+				>
+		</div>
+          </li>
+          <li>
+            <a href="istorie1.html#mitologie" target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Arcul in mitologie</a
+            >
+          </li>
+        </ul>
+        <p
+          class="frame-nav"
+          style="
+            margin: 10px;
+			margin-left: 20px;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+          "
+        >
+          Sageata
+        </p>
+        <div class="frame-nav">
+            <a href="istorie1.html#arrow" target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Prezentare</a>
+            <a href="istorie1.html" target="frame"
+              ><i class="fa-solid fa-paperclip"></i> Sageata in mitologie</a>
+            
         </div>
-    </center>
-    <p>Istorie 1</p>
-   	<ul>
-        <li>
-           <a href="../istorie1.html#img-modal" id="shortcut1"><i class="fa-solid fa-paperclip"></i> Shortcut1</a>
-        </li>
-        <li>
-           <a href="#"><i class="fa-solid fa-paperclip"></i> Shortcut2</a>
-        </li>
-    </ul>
-    <p>Istorie 2</p>
-    <ul>
-        <li>
-           <a href=""><i class="fa-solid fa-paperclip"></i> Shortcut</a>
-        </li> 
-        <li>
-           <a href=""><i class="fa-solid fa-paperclip"></i> Shortcut</a>
-        </li>
-        <li>
- 	       <a href=""><i class="fa-solid fa-paperclip"></i> Shortcut</a>
-        </li>
-    </ul>
+        <a href="istorie1.html" target="frame" class="frame-nav"
+          ><i class="fa-solid fa-paperclip"></i> Arcasul</a
+        >
+        <a href="istorie1.html" target="frame" class="frame-nav"
+          ><i class="fa-solid fa-paperclip"></i> Batalia de la Posada</a
+        >
+		<a href="istorie1.html" target="frame" class="frame-nav"
+          ><i class="fa-solid fa-paperclip"></i> Batalia de la Crecy</a
+        >
+		<a href="istorie1.html" target="frame" class="frame-nav"
+          ><i class="fa-solid fa-paperclip"></i> Batalia de la Azincourt</a
+        >
+        <a href="istorie1.html" target="frame" class="frame-nav"
+          ><i class="fa-solid fa-paperclip"></i> Concluzii</a
+        >
+      </div>
+	  <script>
+		document.querySelectorAll(".clasificare").forEach(function (clasificare) {
+			clasificare.addEventListener("click", function () {
+			  var content = document.getElementById("secondary");
+			  if (content.style.display === "none" || content.style.display === "") {
+				this.innerHTML =
+				  "<i class='fa-solid fa-circle-chevron-up'></i> Clasificare";
+				content.style.display = "block";
+				this.style.border = "1.5px solid #f1f1f1";
+			  } else {
+				this.innerHTML =
+				  "<i class='fa-solid fa-circle-chevron-down'></i> Clasificare";
+				content.style.display = "none";
+				this.style.border = "none";
+			  }
+			});
+		  });
+		  
+	  </script>
 </body>
 </html>
