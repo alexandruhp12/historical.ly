@@ -15,6 +15,21 @@
     ></script>
     <title>Istoria arcului si a sagetii</title>
   </head>
+  <style>
+    ::-webkit-scrollbar {
+      width: 12px;
+      margin-left: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background: #888; 
+    }
+    ::-webkit-scrollbar-track{
+      background: #f1f1f1; 
+    }
+    ::-webkit-scrollbar-thumb:hover{
+      background: #555; 
+    }
+  </style>
   <body>
     <button
       onclick="topFunction()"
@@ -80,103 +95,10 @@
     </nav>
     <div class="sidebar" id="sidebar">
       <button class="closebtn" onclick="closeNav()">&#9776;</button>
-      <div class="sdb" id="sdb">
-        <center>
-          <div>
-            <h2 style="font-size: 30px">Navigare rapida</h2>
-          </div>
-        </center>
-        <p
-          class="frame-nav"
-          style="
-            margin: 10px;
-            color: white;
-            font-size: 1.5em;
-            font-weight: bold;
-          "
-        >
-          Istoria arcului
-        </p>
-        <ul class="frame-nav">
-          <li>
-            <a
-              href="istorie1.html#top"
-              target="frame"
-              ><i class="fa-solid fa-paperclip"></i> Prezentare</a
-            >
-          </li>
-          <li>
-            <label class="clasificare"
-              ><i class="fa-solid fa-circle-chevron-down"></i>
-              Clasificare</label
-            >
-            <ul id="secondary">
-              <li>
-                <a href="istorie1.html#arb" target="frame"
-                   id="arb"><i class="fa-solid fa-paperclip"></i> Arbaleta</a
-                >
-              </li>
-              <li>
-                <a href="istorie1.html" target="frame"
-                  ><i class="fa-solid fa-paperclip"></i> Arcul getic</a
-                >
-              </li>
-              <li>
-                <a href="istorie1.html" target="frame"
-                  ><i class="fa-solid fa-paperclip"></i> Arcul long</a
-                >
-              </li>
-              <li>
-                <a href="istorie1.html" target="frame"
-                  ><i class="fa-solid fa-paperclip"></i> Arcul reflex</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="istorie1.html#mitologie" target="frame"
-              ><i class="fa-solid fa-paperclip"></i> Arcul in mitologie</a
-            >
-          </li>
-        </ul>
-        <p
-          class="frame-nav"
-          style="
-            margin: 10px;
-            color: white;
-            font-size: 1.5em;
-            font-weight: bold;
-          "
-        >
-          Sageata
-        </p>
-        <ul class="frame-nav">
-          <li>
-            <a href="istorie1.html#arrow" target="frame"
-              ><i class="fa-solid fa-paperclip"></i> Prezentare</a
-            >
-          </li>
-          <li>
-            <a href="istorie1.html" target="frame"
-              ><i class="fa-solid fa-paperclip"></i> Sageata in mitologie</a
-            >
-          </li>
-          <li>
-            <a href="istorie1.html" target="frame"
-              ><i class="fa-solid fa-paperclip"></i> Shortcut</a
-            >
-          </li>
-        </ul>
-        <a href="istorie1.html" target="frame" class="frame-nav"
-          ><i class="fa-solid fa-paperclip"></i> Arcasul</a
-        >
-        <a href="istorie1.html" target="frame" class="frame-nav"
-          ><i class="fa-solid fa-paperclip"></i> Batalii</a
-        >
-        <a href="istorie1.html" target="frame" class="frame-nav"
-          ><i class="fa-solid fa-paperclip"></i> Concluzii</a
-        >
-      </div>
+      <center>
+        <iframe src="auxiliary/sidebar_frame.html" class="frame-nav" id="frame-nav" name="frame-nav" style="overflow: auto;" scrolling="yes"></iframe>
+      </center>
+      
     </div>
     <div id="main">
       <center>
@@ -223,8 +145,8 @@
           </form>
         </div>
         <div class="footer-section audio" style="border-left: 2px solid white;">
-            <audio controls>
-                <source src="../../Media/audio/audio.mp3" type="audio/mpeg">
+            <audio controls autoplay loop>
+                <source src="../../Media/audio/bg.mp3" type="audio/mpeg">
               </audio>
               <br>
               <br>
