@@ -334,11 +334,12 @@ label{
     text-align: center;
 }
 .showC{
-    width: 220px;
+    max-width: 400px;
     border-radius: 10px;
     padding: 3px;
     border: solid 1px #3c6e71;
     transition: ease-in-out 0.3s;
+    text-align: center;
 }
 .showC:hover{
     cursor: pointer;
@@ -346,7 +347,7 @@ label{
     color: white;
     padding: 5px;
 }
-#arbaleta{
+#primitiv, #longbow, #maghiar, #scitic, #mongol, #japonez, #asirian{
     display: none;
 }
 .modal-container p, label{
@@ -362,10 +363,18 @@ label{
 .sumar5 p{
     font-size: 25px;
 }
-#arbaleta p{
+#primitiv, #longbow p{
     padding: 10px;
 }   
 #posada{
+    margin: 25px;
+    text-align: justify;
+}
+#crecy{
+    margin: 25px;
+    text-align: justify;
+}
+#azincourt{
     margin: 25px;
     text-align: justify;
 }
@@ -380,4 +389,7 @@ label{
 .sumar6{
     margin: 25px;
     text-align: justify;
+}
+.second label{
+    font-size: 30px;
 }
