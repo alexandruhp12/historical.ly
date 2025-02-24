@@ -347,7 +347,7 @@ label{
     color: white;
     padding: 5px;
 }
-#primitiv, #longbow, #maghiar, #scitic, #mongol, #japonez, #asirian{
+#modal-container{
     display: none;
 }
 .modal-container p, label{
