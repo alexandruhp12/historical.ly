@@ -75,11 +75,12 @@ html{
 .sidebar{
     overflow: hidden;
     height: 94.6%;
-    width: 0;
+    width: 17%;
     float: left;
     background-color: #353535;
     overflow-x: hidden;
     overflow-y: hidden;
+    transition: 0.3s;
     h2{
         text-align: center;
         color: white;
@@ -111,7 +112,7 @@ html{
 }
 .sidebar iframe{
     border: none;
-    height: 88%;
+    height: 91.5%;
     width: 96%;
 }
 .frame{
@@ -119,7 +120,7 @@ html{
     float: right;
     border: none;
     background-color: #D9D9D9;
-    width: 97.5%;
+    width: 83%;
     height: 94.6%;
     transition: 0.3s;
 }
@@ -204,11 +205,10 @@ html{
 }
 
 #main{
-    display: inline-block;
+    display: none;
     background-color: #353535;
     width: 2.5%;
     height: 94.6%;
-    display: inline-block;
     overflow: hidden;
 }
 .sidebar a{
