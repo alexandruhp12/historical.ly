@@ -1,8 +1,8 @@
 function openNav(){
     document.getElementById("sidebar").style.transition = "0.5s";
-    document.getElementById("sidebar").style.width = "16%";
+    document.getElementById("sidebar").style.width = "17%";
     document.getElementById("main").style.display = "none";
-    document.getElementById("frame").style.width = "84%";
+    document.getElementById("frame").style.width = "83%";
     document.getElementById("sdb").style.display = "block";
     document.getElementById("footer").style.float = "left";
     
