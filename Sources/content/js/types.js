@@ -1,6 +1,6 @@
 document.querySelectorAll(".clasificare").forEach(function (clasificare) {
   clasificare.addEventListener("click", function () {
-    var content = document.getElementById("secondary");
+    var content = document.getElementById("modal-container");
     if (content.style.display === "none" || content.style.display === "") {
       this.innerHTML =
         "<i class='fa-solid fa-circle-chevron-up'></i> Clasificare";
