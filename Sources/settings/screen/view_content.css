@@ -135,4 +135,14 @@
       .sumar4 h1{
         font-size: 1.5em;
       }
+      #main{
+        width: 7%;
+      }
+      .openbtn{
+        font-size: 15px;
+      }
+      .fas {
+        font-size: 3em;
+        color: red;
+      }
 }
