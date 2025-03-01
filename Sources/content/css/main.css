@@ -54,7 +54,8 @@ html{
   color: #fff;
   text-decoration: none;
   font-size: 1.5em;
-  font-weight: bold
+  font-weight: bold;
+  margin-right: auto;
 }
 
 .main {
@@ -110,17 +111,20 @@ html{
   text-align: center;
 }
 
-.c1 p:hover,
-.c2 p:hover,
-.c3 p:hover {
-  box-shadow: 0 5px 10px;
-  transition: box-shadow 0.5s ease;
-}
 
 .c1 h2,
 .c2 h2,
 .c3 h2 {
   animation: rainbow-blue 5s infinite;
+}
+
+.c1 img,
+.c2 img,
+.c3 img{
+  width: 10%;
+  float: left;
+  margin: 10px;
+  border-radius: 15px;
 }
 
 @keyframes rainbow-blue {
