@@ -49,6 +49,9 @@ h1{
         width: 60%;
     } 
 }
+h1{
+    font-size: 50px;
+}
 .sumar{
     margin: auto;
     height: 50%;
@@ -348,6 +351,12 @@ label{
 }
 #modal-container{
     display: none;
+    width: auto;
+}
+#modal-container img{
+    float: left; 
+    margin: 15px; 
+    width: 30%;
 }
 .modal-container p, label{
     font-size: 25px;
@@ -361,6 +370,9 @@ label{
 .sumar6,
 .sumar5 p{
     font-size: 25px;
+}
+.sumar3 img{
+    width: 30%;
 }
 #primitiv, #longbow p{
     padding: 10px;
@@ -391,4 +403,14 @@ label{
 }
 .second label{
     font-size: 30px;
+}
+.fas{
+    font-size: 70px;
+    color: red;
+}
+#modal-container img{
+    max-width: 15%;
+}
+.japonez{
+    height: 300px;
 }
