@@ -69,9 +69,11 @@ body{
     background-color: transparent;
 }
 .sidebar{
+    display: block;
+    width: 15%;
     overflow: hidden;
     height: 94.6%;
-    width: 0;
+    width: 17%;
     float: left;
     background-color: #353535;
     overflow-x: hidden;
@@ -114,11 +116,10 @@ body{
     background-color: #444;
 }
 #main{
-    display: inline-block;
+    display: none;
     background-color: #353535;
     width: 2.5%;
     height: 94.6%;
-    display: inline-block;
     overflow: hidden;
 }
 .frame{
@@ -126,7 +127,7 @@ body{
     float: right;
     border: none;
     background-color: #D9D9D9;
-    width: 97.5%;
+    width: 83%;
     height: 94.6%;
     transition: 0.3s;
 }
