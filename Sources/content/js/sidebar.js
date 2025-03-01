@@ -1,8 +1,16 @@
 function openNav(){
     document.getElementById("sidebar").style.transition = "0.5s";
-    document.getElementById("sidebar").style.width = "17%";
+    if(window.innerWidth < 768){
+        document.getElementById("sidebar").style.width = "100%";
+    }else{
+        document.getElementById("sidebar").style.width = "17%";
+    }
     document.getElementById("main").style.display = "none";
-    document.getElementById("frame").style.width = "83%";
+    if(window.innerWidth < 768){
+        document.getElementById("frame").style.width = "100%";
+    }else{
+        document.getElementById("frame").style.width = "83%";
+    }
     document.getElementById("sdb").style.display = "block";
     document.getElementById("footer").style.float = "left";
     
@@ -13,7 +21,7 @@ function closeNav(){
     document.getElementById("sidebar").style.transition = "none";
     document.getElementById("sidebar").style.width = "0";
     document.getElementById("main").style.display = "inline-block";
-    document.getElementById("frame").style.width = "97.5%"
+    document.getElementById("frame").style.width = "93%"
     document.getElementById("frame").style.float = "right";
     document.getElementById("frame").style.transition = "0.5s";
     document.getElementById("sdb").style.display = "none";
