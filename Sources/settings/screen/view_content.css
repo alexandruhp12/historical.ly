@@ -1,4 +1,7 @@
 @media screen and (min-width: 300px) and (max-width: 700px) and  (min-height: 700px) and (max-height: 900px){
+  .frame{
+    width:97%;
+  }
     .navbar{
         display: flex;
         flex-direction: column;
@@ -85,10 +88,51 @@
         font-size: 1.2em;
       }
       .first p{
+        margin: 20px;
         font-size: 1.2em;
       }
       .first img{
         width: 50%;
         margin: 2px;
+      }
+      label{
+        font-size: 1.2em;
+      }
+      .showC{
+        max-width: 50%;
+        font-size: 1.5em;
+      }
+      #modal-container{
+        margin: 0;
+      }
+      #modal-container img{
+        width: 55%;
+        float: left;
+        margin: 5px;
+      }
+      .sumar2 h1{
+        font-size: 1.5em;
+      }
+      .sumar2 img{
+        width: 60%;
+      }
+      .sumar2 p{
+        font-size: 0.8em;
+        text-align: justify;
+        margin: 20px;
+      }
+      .sumar3 h1{
+        font-size: 1.5em;
+      }
+      .sumar3 p{
+        font-size: 0.8em;
+        text-align: justify;
+        margin: 20px;
+      }
+      .sumar3 img{
+        width: 50%;
+      }
+      .sumar4 h1{
+        font-size: 1.5em;
       }
 }
