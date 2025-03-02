@@ -46,7 +46,7 @@
 		overflow: hidden;
 }
 
-	.clasificare{
+	.clasificare, .clasificare1{
 		padding: 8px;
 		text-decoration: none;
 		font-size: 1.4em;
@@ -54,7 +54,7 @@
 		display: block;
 		transition: 0.3s;
 	}
-	.clasificare:hover{
+	.clasificare:hover, .clasificare1:hover{
 		font-size: 1.5em;
 		font-weight: bold;
 		color: #4f8dff;
@@ -64,7 +64,7 @@
 		text-decoration: none;
 		overflow: hidden;
 	}
-	#secondary{
+	#secondary, #secondary1{
 		margin-left: 25px;
 		display: none;
 	}
@@ -117,38 +117,38 @@ a{
             <div id="secondary">
 				<label><b>Arcul simplu</b></label>
               
-                <a href="../istorie1.html#arb" target="frame"
+                <a href="istorie1.html#arb" target="frame"
                    id="arb"><i class="fa-solid fa-paperclip"></i> Arcul simplu (primitiv)</a
                 >
              
-                <a href="../istorie1.html" target="frame"
+                <a href="istorie1.html" target="frame"
                   ><i class="fa-solid fa-paperclip"></i> Arcul lung englezesc (longbow)</a
                 >
 				<label><b>Arcul compozit</b></label>
              
-                <a href="../istorie1.html" target="frame"
+                <a href="istorie1.html" target="frame"
                   ><i class="fa-solid fa-paperclip"></i> Arcul asirian</a
                 >
              
-                <a href="../istorie1.html" target="frame"
+                <a href="istorie1.html" target="frame"
                   ><i class="fa-solid fa-paperclip"></i> Arcul scitic</a
                 >
 
-				<a href="../istorie1.html" target="frame"
+				<a href="istorie1.html" target="frame"
 				  ><i class="fa-solid fa-paperclip"></i> Arcul maghiar</a
 				>
 
-				<a href="../istorie1.html" target="frame"
+				<a href="istorie1.html" target="frame"
 				  ><i class="fa-solid fa-paperclip"></i> Arcul mongol</a
 				>
 
-				<a href="../istorie1.html" target="frame"
+				<a href="istorie1.html" target="frame"
 				  ><i class="fa-solid fa-paperclip"></i> Arcul japonez lung (yumi)</a
 				>
 		</div>
           </li>
           <li>
-            <a href="../istorie1.html#mitologie" target="frame"
+            <a href="istorie1.html#mitologie" target="frame"
               ><i class="fa-solid fa-paperclip"></i> Arcul si sageata in mitologie</a
             >
           </li>
@@ -166,24 +166,60 @@ a{
           Sageata
         </p>
         <div class="frame-nav">
-            <a href="../istorie1.html#arrow" target="frame"
+            <a href="istorie1.html#arrow" target="frame"
               ><i class="fa-solid fa-paperclip"></i> Prezentare</a>
             
-            
         </div>
-        <a href="../istorie1.html" target="frame" class="frame-nav"
+		<label class="clasificare1"
+              ><i class="fa-solid fa-circle-chevron-down"></i>
+              Clasificarea sagetii</label
+            >
+            <div id="secondary1">
+				<label><b>Dupa materialul varfului</b></label>
+              
+                <a href="istorie1.html#arb" target="frame"
+                   id="arb"><i class="fa-solid fa-paperclip"></i> De os</a
+                >
+             
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> De piatra</a
+                >
+				<a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> De metal</a
+                >
+				<label><b>Dupa forma varfului</b></label>
+             
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> Trilobat</a
+                >
+             
+                <a href="istorie1.html" target="frame"
+                  ><i class="fa-solid fa-paperclip"></i> Glont</a
+                >
+
+				<a href="istorie1.html" target="frame"
+				  ><i class="fa-solid fa-paperclip"></i> Frunza</a
+				>
+
+				<a href="istorie1.html" target="frame"
+				  ><i class="fa-solid fa-paperclip"></i> Barbeta</a
+				>
+
+				
+		</div>
+        <a href="istorie1.html" target="frame" class="frame-nav"
           ><i class="fa-solid fa-paperclip"></i> Arcasul</a
         >
-        <a href="../istorie1.html" target="frame" class="frame-nav"
+        <a href="istorie1.html" target="frame" class="frame-nav"
           ><i class="fa-solid fa-paperclip"></i> Batalia de la Posada</a
         >
-		<a href="../istorie1.html" target="frame" class="frame-nav"
+		<a href="istorie1.html" target="frame" class="frame-nav"
           ><i class="fa-solid fa-paperclip"></i> Batalia de la Crecy</a
         >
-		<a href="../istorie1.html" target="frame" class="frame-nav"
+		<a href="istorie1.html" target="frame" class="frame-nav"
           ><i class="fa-solid fa-paperclip"></i> Batalia de la Azincourt</a
         >
-        <a href="../istorie1.html" target="frame" class="frame-nav"
+        <a href="istorie1.html" target="frame" class="frame-nav"
           ><i class="fa-solid fa-paperclip"></i> Concluzii</a
         >
       </div>
@@ -193,18 +229,33 @@ a{
 			  var content = document.getElementById("secondary");
 			  if (content.style.display === "none" || content.style.display === "") {
 				this.innerHTML =
-				  "<i class='fa-solid fa-circle-chevron-up'></i> Clasificare";
+				  "<i class='fa-solid fa-circle-chevron-up'></i> Clasificarea arcului";
 				content.style.display = "block";
 				this.style.border = "1.5px solid #f1f1f1";
 			  } else {
 				this.innerHTML =
-				  "<i class='fa-solid fa-circle-chevron-down'></i> Clasificare";
+				  "<i class='fa-solid fa-circle-chevron-down'></i> Clasificarea arcului";
 				content.style.display = "none";
 				this.style.border = "none";
 			  }
 			});
 		  });
-		  
+		  document.querySelectorAll(".clasificare1").forEach(function (clasificare1) {
+			clasificare1.addEventListener("click", function () {
+			  var content = document.getElementById("secondary1");
+			  if (content.style.display === "none" || content.style.display === "") {
+				this.innerHTML =
+				  "<i class='fa-solid fa-circle-chevron-up'></i> Clasificarea sagetii";
+				content.style.display = "block";
+				this.style.border = "1.5px solid #f1f1f1";
+			  } else {
+				this.innerHTML =
+				  "<i class='fa-solid fa-circle-chevron-down'></i> Clasificarea sagetii";
+				content.style.display = "none";
+				this.style.border = "none";
+			  }
+			});
+		  });
 	  </script>
 </body>
 </html>
