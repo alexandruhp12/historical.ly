@@ -353,11 +353,7 @@ label{
     display: none;
     width: auto;
 }
-#modal-container img{
-    float: left; 
-    margin: 15px; 
-    width: 30%;
-}
+
 .modal-container p, label{
     font-size: 25px;
 }
@@ -408,9 +404,7 @@ label{
     font-size: 70px;
     color: red;
 }
-#modal-container img{
-    max-width: 15%;
-}
+
 .japonez{
     height: 300px;
 }
@@ -421,6 +415,27 @@ label{
 }
 .sumar4 img{
     width: 30%;
+    margin: 10px;
+}
+
+#modal-container{
+    overflow: hidden;
+}
+.second1 img{
+    width: 20%;
+    margin: 10px;
+}
+.second img{
+    width: 20%;
     float: left;
     margin: 10px;
+}
+.structure img{
+    border-radius: 15px;
+    width: 50%;
+}
+.structure p{
+    font-size: 25px;
+    text-align: justify;
+    margin: 25px;
 }
