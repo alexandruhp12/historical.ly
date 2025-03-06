@@ -381,7 +381,7 @@ label{
     margin: 25px;
     text-align: justify;
 }
-#azincourt{
+#azincourt, #jalut, #nagashino{
     margin: 25px;
     text-align: justify;
 }
@@ -438,4 +438,40 @@ label{
     font-size: 25px;
     text-align: justify;
     margin: 25px;
+}
+.artemis{
+    float: left;
+    overflow: hidden;
+    overflow: auto;
+    margin: 20px;
+}
+.artemis1{
+    float: right;
+    overflow: hidden;
+    overflow: auto;
+    margin: 20px;
+    width: 40%;
+}
+.citat{
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+.hercule{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.apolo{
+    float: left;
+    margin: 10px;
+}
+.jalut{
+    float: right;
+    margin: 10px;
+}
+.nagashino{
+    float: right;
+    margin: 10px;
 }
