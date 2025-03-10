@@ -41,36 +41,65 @@
         <h1>Galerie</h1>
    </div>
    <div class="cat1">
-    <h2 class="showC">Categoria 1 <i class='fa-solid fa-eye'></i></h2>
+    <h2 class="showC" alt="Tipuri de arcuri">Tipuri de arcuri <i class='fa-solid fa-eye'></i></h2>
         <div class="content">
             <p class="desc">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur provident alias autem blanditiis fuga architecto, soluta, repellat repellendus dolorum molestiae quam? Laboriosam exercitationem assumenda totam voluptatum omnis ducimus aspernatur?
             </p>
             <div class="photo1">
-                <img src="../../Media/img/primitiv.JPG" alt="" id="img_modal">
-                <img src="../../Media/img/longbow.jpg" alt="" id="img_modal">
-                <img src="../../Media/img/asirieni.jpg" alt="" id="img_modal">
-                <img src="../../Media/img/scitic.jpg" alt="" id="img_modal">
-                <img src="../../Media/img/maghiar.jpg" alt="" id="img_modal">
-                <img src="../../Media/img/mongol.jpg" alt="" id="img_modal">
+                <div class="column1">
+                    <img src="../../Media/img/primitiv.JPG" alt="" id="img_modal"><br>
+                    <img src="../../Media/img/longbow.jpg" alt="" id="img_modal">
+                </div>
+                <div class="column2">
+                    <img src="../../Media/img/asirieni.jpg" alt="" id="img_modal"><br>
+                    <img src="../../Media/img/scitic.jpg" alt="" id="img_modal">
+                </div>
+                <div class="column3">
+                    <img src="../../Media/img/maghiar.jpg" alt="" id="img_modal">
+                    <img src="../../Media/img/mongol.jpg" alt="" id="img_modal">
+                </div>
+                
                 <img src="../../Media/img/yumi.jpg" alt="" id="img_modal" style="width: 10%;">
             </div>
             <div class="video1"></div>
         </div>
-        
+   </div>
+   <div class="cat1" id="2">
+    <h2 class="showC" alt="Tipuri de sageti">Tipuri de sageti <i class="fa-solid fa-eye"></i></h2>
+    <div class="content">
+        <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores illo beatae, repudiandae distinctio eius eos corporis, obcaecati, veritatis consectetur quasi quia amet commodi voluptatum ducimus numquam molestiae odio qui optio.
+        </p>
+        <div class="photo1">
+            <div class="column1">
+                <img src="../../Media/img/os.jpg" id="img_modal">
+                <img src="../../Media/img/stone.jpg" id="img_modal">
+            </div>
+            <div class="column2">
+                <img src="../../Media/img/bronz.jpg" id="img_modal">
+                <img src="../../Media/img/fier.jpg" id="img_modal">
+            </div>
+            <div class="column3">
+                <img src="../../Media/img/broadhead.png" id="img_modal">
+                <img src="../../Media/img/bodkin.jpg" id="img_modal">
+            </div>
+        </div>
+    </div>
    </div>
    <script> 
-    document.querySelectorAll('.showC').forEach(function(showC) {
-        showC.addEventListener('click', function() {
+    document.querySelectorAll(".showC").forEach(function(showC) {
+        showC.addEventListener("click", function() {
             var content = this.nextElementSibling;
             if (content.style.display === "none" || content.style.display === "") {
                 content.style.display = "block";
-                showC.innerHTML = "Categoria 1 <i class='fa-solid fa-eye-slash'></i>";
+                var title = this.alt;
+                showC.innerHTML = title.concat(" <i class='fa-solid fa-eye-slash'></i>");
                 showC.style.color = "white";
                 showC.style.backgroundColor = "#3c6e71";
             } else {
                 content.style.display = "none";
-                showC.innerHTML = "Categoria 1 <i class='fa-solid fa-eye'></i>";
+                showC.innerHTML = this.alt & " <i class='fa-solid fa-eye'></i>";
                 showC.style.color = "black";
                 showC.style.backgroundColor = "#D9D9D9";
             }
