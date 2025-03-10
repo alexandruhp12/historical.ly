@@ -255,17 +255,15 @@ body{
 .photo1, .desc{
     margin: 25px;
 }
-.photo1 img{
-    border-radius: 10px;
-    margin: 10px;
+.photo1 .column1, .photo1 .column2, .photo1 .column3{
     display: inline-block;
-    width: 22%;
-    height: 15%;
+    width: 25%;
 }
-.photo1 img:hover{
-    cursor: pointer;
-    border: solid black 2px;
-}   
+.column1 img, .column2 img, .column3 img{
+    width: 80%;
+    margin: 10px;
+
+}
 .myModal {
     display: none; 
     position: fixed;  
