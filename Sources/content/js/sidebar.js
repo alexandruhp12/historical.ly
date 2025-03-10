@@ -16,10 +16,19 @@ function openNav(){
     document.getElementById("footer").style.width = "100%";
 }
 function closeNav(){
+    
     document.getElementById("sidebar").style.transition = "none";
     document.getElementById("sidebar").style.width = "0";
     document.getElementById("main").style.display = "inline-block";
-    document.getElementById("frame").style.width = "97.5%";
+    
+    if(window.innerWidth < 768){
+        document.getElementById("main").style.width = "7.5%";
+        document.getElementById("frame").style.width = "92.5%";
+    }
+    else{
+        document.getElementById("main").style.width = "2.5%";
+        document.getElementById("frame").style.width = "97.5%";
+    }
     document.getElementById("frame").style.float = "right";
     document.getElementById("frame").style.transition = "0.5s";
     document.getElementById("sdb").style.display = "none";
