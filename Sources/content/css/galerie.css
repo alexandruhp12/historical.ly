@@ -135,56 +135,68 @@ body{
     display: none;
 }
 .footer {
-    display: flex;
+    display: block;
     background-color: #284b63;
     color: white;
     padding: 30px 0;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-.footer-content {
+    overflow: hidden;
+  }
+  
+  .footer-content {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-}
-.footer-section {
+  }
+  
+  .footer-section {
     flex: 1;
     padding: 20px;
     min-width: 250px;
-}
-.footer-section h2, .footer-section h3 {
+  }
+  
+  .footer-section h2,
+  .footer-section h3 {
     margin-bottom: 15px;
-}
-.footer-section p, .footer-section a {
+  }
+  
+  .footer-section p,
+  .footer-section a {
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
     display: block;
-}
-.footer-section a:hover {
+  }
+  
+  .footer-section a:hover {
     text-decoration: underline;
-}
-.contact-form .text-input {
+  }
+  
+  .contact-form .text-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-}
-.contact-form .btn {
-    background-color: #3C6E71;
+  }
+  
+  .contact-form .btn {
+    background-color: #3c6e71;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-.contact-form .btn:hover {
+  }
+  
+  .contact-form .btn:hover {
     background-color: #284b63;
-}
-.footer-bottom {
+  }
+  
+  .footer-bottom {
     background-color: #23303e;
     color: white;
     text-align: center;
@@ -192,23 +204,28 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-.footer h2{
+  }
+  
+  .footer h2 {
     margin: 10px;
-}
-.footer .link{
+  }
+  
+  .footer .link {
     margin: 10px;
-}
-
-.link, .info{ 
+  }
+  
+  .link,
+  .info {
     display: inline-block;
-}
-.link ul{
+  }
+  
+  .link ul {
     list-style: none;
-}
-.info{
+  }
+  
+  .info {
     margin-left: 30%;
-}
+  }
 .title{
     overflow: hidden;
     display: block;
@@ -226,7 +243,7 @@ body{
 }
 .cat1 .content{
     width: 100%;
-    display: none;
+    display: block;
 }
 .photo1{
     display: flex;
@@ -255,6 +272,10 @@ body{
 .photo1, .desc{
     margin: 25px;
 }
+.btn-big{
+    width: 15%;
+    font-size: 1em;
+  }
 .photo1 .column1, .photo1 .column2, .photo1 .column3{
     display: inline-block;
     width: 25%;
