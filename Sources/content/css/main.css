@@ -10,6 +10,7 @@ html{
 }
 
 .navbar{
+  
   display: flex;
   justify-content: right;
   align-items: center;
@@ -369,4 +370,8 @@ html{
 }
 .main #h1{
   font-size: 5em;
+}
+.btn-big{
+  width: 15%;
+  font-size: 1em;
 }
