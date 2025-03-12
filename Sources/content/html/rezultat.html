@@ -2,13 +2,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd77b90805.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    *{
+        margin: 10px;
+        font-family: Platypi;
+    }
+    .q{
+        font-size: 1.5em;
+    }
+   ul{
+    font-size: 1.5em;
+   }
+</style>
 <body>
-    Ai obtinut: <p id="r"></p>
+    <center>
+        <h1>Ai obținut <label id="rez"></label></h1>
+    </center>
     <script>
         var rezultat = localStorage.getItem('rezultat');
-        document.getElementById("r").innerHTML = rezultat +   "/100 puncte";
+        document.getElementById("rez").innerHTML = rezultat +   "/100 puncte!";
     </script>
+    <h1>Răspunsurile corecte alte testului sunt:</h1>
+    <p class="q"><b>1. Care este principalul rol al penelor de pe o săgeată?</b></p>
+    <ul>
+        <label for="r1.1">a) Îmbunătățirea penetrării săgeții în țintă.</label><br>
+        <label for="r1.2">b) Protejarea coardei arcului de uzură. <label><br>
+        <label for="r1.3">c) Creșterea greutății săgeții pentru un impact mai mare.</label><br>
+        <label for="r1.4" style="background-color: rgb(32, 179, 171);">d) Stabilizarea săgeții în timpul zborului.</label><br>
+    </ul>
+    <p class="q"><b>2. Care dintre următoarele tipuri de arcuri a fost folosit pentru a învinge armata germană condusă de Otto 1? </b></p>
+    <ul>
+        <label for="r2.1">a) Longbow englezesc</label><br>
+        <label for="r2.2">b) Arcul japonez</label><br>
+        <label for="r2.3" style="background-color: rgb(32, 179, 171);">c) Arcul maghiar</label><br>
+        <label for="r2.4">d) Arcul scitic</label><br>
+    </ul>
+    <p class="q"><b>3. Care este o caracteristică importantă a vârfului de săgeată Broadhead pentru eliminarea adversarilor?</b></p>
+    <ul>
+        <label for="r3.1">a) vârful ascuțit și lung</label><br>
+        <label for="r3.2">b) format din oțel și cu formă triunghiulară</label><br>
+        <label for="r3.3">c) penetrare bună cu ajutorul lor</label><br>
+        <label for="r4.3" style="background-color: rgb(32, 179, 171);">d) capete largi mecanice cu lame ascuțite</label><br>
+    </ul>
+    <p class="q"><b>4. Ce simbolizează arcul și săgețile zeiței Artemis?</b></p>
+    <ul>
+        <label for="r4.1" style="background-color: rgb(32, 179, 171);">a) Independența, vânătoarea și dreptatea divină</label><br>
+        <label for="r4.2">b) Puterea războinică și protecția împotriva zeilor rivali</label><br>
+        <label for="r4.3">c) Controlul asupra furtunilor și mării</label><br>
+        <label for="r4.4">d) Legătura dintre zei și muritori prin oracole</label><br>
+    </ul>
+    <p class="q"><b>5. Intrebarea intai?</b></p>
+    <ul>
+        <label for="r5.1">a) Option 1</label><br>
+        <label for="r5.2" style="background-color: rgb(32, 179, 171);">b) Option 2</label><br>
+        <label for="r5.3">c) Option 3</label><br>
+        <label for="r5.4">d) Option 4</label><br>
+    </ul>
+    <p class="q"><b>6. Intrebarea intai?</b></p>
+    <ul>
+        <label for="r6.1">a) Option 1</label><br>
+        <label for="r6.2">b) Option 2</label><br>
+        <label for="r6.3" style="background-color: rgb(32, 179, 171);">c) Option 3</label><br>
+        <label for="r6.4">d) Option 4</label><br>
+    </ul>
+    <p class="q"><b>7. În care dintre următoarele bătălii s-a folosit prima dată tunul în luptele europene?</b></p>
+    <ul>
+        <label for="r7.1">a) Bătălia de la Agincourt</label><br>
+        <label for="r7.2" style="background-color: rgb(32, 179, 171);">b) Bătălia de la Crecy</label><br>
+        <label for="r7.3">c) Bătălia de la Nagashino</label><br>
+        <label for="r7.4">d) Bătălia de la Ain Jalut</label><br>
+    </ul>
+    <p class="q"><b>8. Care a fost unul dintre principalele avantaje ale utilizării arcașilor pe câmpul de luptă?</b></p>
+    <ul>
+        <label for="r8.1" style="background-color: rgb(32, 179, 171);">a) Posibilitatea de a angaja inamicul de la distanță, provocând pierderi înainte de lupta corp la corp.</label><br>
+        <label for="r8.2">b) Capacitatea de a purta armuri grele și de a lupta eficient în lupta corp la corp.</label><br>
+        <label for="r8.3">c) Utilizarea exclusivă a arcului în bătălii, fără a necesita alte unități de suport.</label><br>
+        <label for="r8.4">d) Faptul că nu era nevoie de antrenament special pentru a deveni un arcaș priceput.</label><br>
+    </ul>
+    <p class="q">
+        <b>9. Care dintre următoarele tipuri de arcași din istorie erau renumiți pentru mobilitate și precizie, luptând călare pe cai?</b>
+    </p>
+    <ul>
+        <label for="r9.1">a) Longbowmen englezi</label><br>
+        <label for="r9.2">b) Arcașii ieniceri otomani</label><br>
+        <label for="r9.3" style="background-color: rgb(32, 179, 171);">c) Arcașii mongoli</label><br>
+        <label for="r9.4">d) Arcașii asirieni</label><br>
+    </ul>
 </body>
 </html>
