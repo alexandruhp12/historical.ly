@@ -60,6 +60,7 @@
         document.getElementById("sidebar").style.transition = "none";
         document.getElementById("sidebar").style.width = "0";
         document.getElementById("main").style.display = "inline-block";
+        document.getElementById("main").style.width = "2.5%";
         document.getElementById("frame").style.width = "97.5%"
         document.getElementById("frame").style.float = "right";
         document.getElementById("frame").style.transition = "0.5s";
@@ -74,13 +75,18 @@
         <p>All rights reserved. 2025</p>
         <p>Creator: <b>Hulpan Constantin - Alexandru</b></p>
         <p>Made with: HTML, CSS, Javascript, NodeJS, Mongo.</p>
+        <audio controls autoplay loop>
+            <source src="../../Media/audio/bg.mp3" type="audio/mpeg">
+          </audio>
     </div>
     <div class="footer-section links" style="border-right: solid 2px white;">
         <h3>Link-uri utile:</h3>
         <ul>
-            <li><a href="#">Chapter 1</a></li>
-            <li><a href="#">Chapter 2</a></li>
-            <li><a href="#">Chapter 3</a></li>
+            <li><a href="#">Arcul si sageata in mitologie</a></li>
+                <li><a href="#">Arcasul</a></li>
+                <li><a href="#">Evaluare</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Bibliografie</a></li>
         </ul>
     </div>
     <div class="footer-section contact-form">
@@ -88,7 +94,7 @@
         <form action="contact.html" method="post">
             <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
             <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
-            <button type="submit" class="btn btn-big">
+            <button type="submit" class="btn-big">
                 <i class="fa fa-envelope"></i>
                 Send
             </button>
